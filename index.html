@@ -8,14 +8,18 @@
     <header>
       <div>
         <a>
-          <img src="img/logo.png" alt="Техномарт" width="109" height="19">
+          <img src="img/logo.png" alt="Логотип интернет-магазина Техномарт" width="109" height="19">
         </a>
-        <!--Search Form is not necessary in this task (Не нужно делать разметку форм, так как они ещё не изучены) -->
-        <span>Поиск</span>
+        <!--Search Form -->
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <label class="visually-hidden" for="site-search">Поиск по сайту:</label>
+          <input type="text" name="search" id="site-search">
+          <button type="submit">Поиск:</button>
+        </form>
         <!--end Search Form-->
-        <a>Закладки: 0</a>
-        <a>Корзина: 0</a>
-        <a>Оформить заказ</a>
+        <a href="#">Закладки: 0</a>
+        <a href="#">Корзина: 0</a>
+        <a href="#">Оформить заказ</a>
       </div>
 
       <div>
@@ -25,28 +29,28 @@
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul>
-            <li><button type="button">Войти</button></li>
-            <li><button type="button">Регистрация</button></li>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Регистрация</a></li>
         </ul>
         <nav>
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="#"></a>Компания</li>
+            <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#"></a>Новости</li>
-            <li><a href="#"></a>Спецпредложения</li>
-            <li><a href="#"></a>Доставка</li>
-            <li><a href="#"></a>Контакты</li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <h1>Интернет-магазин Техномарт</h1>
-      <!-- Личный проект: продолжаем подготовку графики -->
+      <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
+      <!-- Личный проект: продолжаем разметку (Блок размечать не нужно) -->
       <section>
-        <h1>Популярные разделы</h1>
+        <h2 class="visually-hidden">Популярные разделы</h2>
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -63,30 +67,34 @@
         </ul>
       </section>
       <section>
-        <h1>Популярные товары</h1>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <!-- Slider -->
-        <div>
           <div>
-            <lable>Первый слайд</lable>
-            <lable>Второй слайд</lable>
+
+            <div>
+              <span>Первый слайд</span>
+              <span>Второй слайд</span>
+            </div>
+
+            <div>
+              <span>Слайд влево</span>
+              <span>Слайд вправо</span>
+            </div>
+
+            <ul>
+              <li>
+                <h2>Перфораторы</h2>
+                <p>Настоящие мужские игрушки</p>
+                <a href="catalog.html">открыть каталог</a>
+              </li>
+              <li>
+                <h2>Дрели</h2>
+                <p>Соседям на радость!</p>
+                <a href="#">открыть каталог</a>
+              </li>
+            </ul>
+
           </div>
-          <div>
-            <lable>Слайд влево</lable>
-            <lable>Слайд вправо</lable>
-          </div>
-          <ul>
-            <li>
-              <h2>Перфораторы</h2>
-              <p>Настоящие мужские игрушки</p>
-              <a href="catalog.html">открыть каталог</a>
-            </li>
-            <li>
-              <h2>Дрели</h2>
-              <p>Соседям на радость!</p>
-              <a href="#">открыть каталог</a>
-            </li>
-          </ul>
-        </div>
         <!-- end Slider -->
         <ul>
           <li>
@@ -100,10 +108,8 @@
         </ul>
       </section>
       <section>
-        <div>
-          <h1>Популярные товары:</h1>
+          <h2>Популярные товары:</h2>
           <a href="#">Все популярные товары</a>
-        </div>
         <ul>
           <li>
             <p>
@@ -172,10 +178,8 @@
       </section>
 
       <section>
-        <div>
-          <h1>Популярные производители:</h1>
+          <h2>Популярные производители:</h2>
           <a href="#">Все производители</a>
-        </div>
         <ul>
           <li>
             <img src="img/manufacturers/bosch.png" alt="Bosch" width="169" height="31">
@@ -204,12 +208,12 @@
         </ul>
       </section>
       <section>
-        <h1>Сервисы</h1>
+        <h2 class="visually-hidden">Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div>
-          <lable>Доставка</lable>
-          <lable>Гарантия</lable>
-          <lable>Кредит</lable>
+          <span>Доставка</span>
+          <span>Гарантия</span>
+          <span>Кредит</span>
         </div>
         <ul>
           <li>
@@ -217,14 +221,18 @@
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </div>
-            <img src="img/delivery.png" alt="Доставка" width="468" height="261">
+            <div>
+              <img src="img/delivery.png" alt="Доставка" width="468" height="261">
+            </div>
           </li>
           <li>
             <div>
               <h2>Гарантия</h2>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </div>
-            <img src="img/guarantee.png" alt="Гарантия" width="389" height="283">
+            <div>
+              <img src="img/guarantee.png" alt="Гарантия" width="389" height="283">
+            </div>
           </li>
           <li>
             <div>
@@ -232,20 +240,21 @@
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <button type="button">отправить заявку</button>
             </div>
-            <img src="img/credit.png" alt="Кредит" width="465" height="285">
+            <div>
+                <img src="img/credit.png" alt="Кредит" width="465" height="285">
+            </div>
           </li>
         </ul>
       </section>
+
+      <!-- end Личный проект: продолжаем разметку (Блок размечать не нужно) -->
+
       <section>
-        <h1>О компании</h1>
+        <h2 class="visually-hidden">О компании</h2>
         <div>
           <h2>Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-          </p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-            Техномарт работает со многими транспортными компаниями:
-          </p>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -256,30 +265,68 @@
         <div>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <button type="button">
-            <img src="img/map-cap.jpg" alt="Заглушка карты" width="300" height="158">
-          </button>
-          <button type="button">Заблудились? Напишите нам!</button>
+          <a href="#">
+            <img src="img/map-cap.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="300" height="158">
+          </a>
+          <a href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
 
       <section>
-        <h2>Карта</h2>
-        <button type="button">Закрыть</button>
-        <!-- PopUp Map is not necessary in this task (Не нужно размечать содержимое всплывающих окон) -->
+        <h2 class="visually-hidden">Форма авторизации</h2>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div>
+              <label for="username-field">Ваше имя:</label>
+              <input type="text" id="username-field" name="username" placeholder="Имя Фамилия">
+            </div>
+            <div>
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+          <button type="button">Закрыть</button>
+        </div>
       </section>
 
       <section>
-        <h2>Заблудились? Напишите нам!</h2>
-        <button type="button">Закрыть</button>
-        <!-- PopUp Form write us is not necessary in this task (Не нужно размечать содержимое всплывающих окон) -->
+        <h2 class="visually-hidden">Карта</h2>
+        <div>
+          <!-- embed map-->
+          <p>
+            <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="940" height="446">
+          </p>
+          <!-- end embed map-->
+          <button type="button">Закрыть</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Заблудились? Напишите нам!</h2>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div>
+              <label for="name-field">Ваше имя:</label>
+              <input type="text" id="name-field" name="your_name" placeholder="Имя Фамилия">
+
+              <label for="email-field">Ваш e-mail:</label>
+              <input type="text" id="email-field" name="your_email" placeholder="email@example.com">
+
+              <label for="comment-field">Текст письма:</label>
+              <textarea name="comment-field" id="comment-field" placeholder="В свободной форме"></textarea>
+            </div>
+            <div>
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+          <button type="button">Закрыть</button>
+        </div>
       </section>
     </main>
 
     <footer>
       <div>
         <a>
-          <img src="img/logo.png" alt="Техномарт" width="138" height="23">
+          <img src="img/logo.png" alt="Логотип интернет-магазина Техномарт" width="138" height="23">
         </a>
         <ul>
           <li><a href="#">Компания</a></li>
@@ -303,13 +350,11 @@
 
       <div>
         <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-        <div>
           <ul>
             <li><a href="#">Вконтакте</a></li>
             <li><a href="#">Фейсбук</a></li>
             <li><a href="#">Инстаграм</a></li>
           </ul>
-        </div>
         <p>Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
