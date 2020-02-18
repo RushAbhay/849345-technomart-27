@@ -27,7 +27,6 @@ button {
 	border: none;
 }
 
-
 .button {
 	padding: 10px 40px;
 	font-size: 14px;
@@ -374,9 +373,12 @@ input[type=radio].visually-hidden {
 	text-align: center;
 }
 
-.main-header-contacts .main-header-phone {
-	display: block;
+.main-header-phone {
 	box-sizing: border-box;
+
+	position: relative;
+
+	display: block;
 	padding: 10px 0;
 	padding-left: 20px;
 	margin-bottom: 4px;
@@ -390,6 +392,19 @@ input[type=radio].visually-hidden {
 	border: solid 3px #ffffff;
 }
 
+.main-header-phone::before {
+	content: "";
+
+	position: absolute;
+	left: 10px;
+
+	width: 19px;
+	height: 19px;
+
+	background: url("../img/icon-phone.svg") no-repeat;
+	background-size: contain;
+}
+
 .main-header-contacts .main-header-address {
 	margin: 0;
 
@@ -400,7 +415,7 @@ input[type=radio].visually-hidden {
 .user-navigation-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 308px;
+	width: 310px;
 }
 
 .user-navigation {
@@ -1048,7 +1063,7 @@ input[type=radio].visually-hidden {
 	display: none;
 }
 
-.services-slides li:nth-child(1) {
+.services-slides .services-slide-delivery {
 	display: block;
 	width: 700px;
 	height: 200px;
@@ -1618,7 +1633,7 @@ input[type="radio"]:checked ~ label::before {
 	overflow: hidden;
 }
 
-.catalog-item:nth-child(4),
+.catalog-item:nth-child(4n),
 .inner-page .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -2055,16 +2070,17 @@ input[type="radio"]:checked ~ label::before {
 /* modal */
 
 .modal {
-	position: absolute;
-	display: block;
-	left: 20.1vw;
-	right: 20.1vw;
-	top: 20vh;
+	position: fixed;
+
 }
 
 .modal-map {
-	box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
+	top: 120px;
+	left: 50%;
 
+	margin-left: -470px;
+
+	box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
 }
 
 .modal-map p {
@@ -2104,9 +2120,14 @@ input[type="radio"]:checked ~ label::before {
 
 .modal-feedback,
 .modal-authorization {
+	top: 120px;
+	left: 50%;
+
 	width: 620px;
-	margin: 0 auto;
+	margin-left: -310px;
+
 	border-top: 7px solid #ff5256;
+
 	background-color: #fff;
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
@@ -2241,7 +2262,9 @@ input[type="radio"]:checked ~ label::before {
 	width: 140px;
 }
 
-.modal {
+.modal.modal-authorization,
+.modal.modal-map,
+.modal.modal-feedback {
 	display: none;
 }
 /* end modal */

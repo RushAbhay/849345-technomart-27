@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Техномарт</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -36,17 +38,19 @@
             <a class="main-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="main-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <ul class="user-navigation">
-              <li>
-                <a class="login-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
-                Войти
-              </a>
-              </li>
-              <li>
-                <a class="registration-link" href="#">Регистрация</a>
-              </li>
-          </ul>
+          <div class="user-navigation-wrapper">
+            <ul class="user-navigation">
+                <li>
+                  <a class="login-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                  Войти
+                </a>
+                </li>
+                <li>
+                  <a class="registration-link" href="#">Регистрация</a>
+                </li>
+            </ul>
+          </div>
         </div>
         <nav>
           <ul class="site-navigation">
@@ -251,18 +255,18 @@
               </li>
             </ul>
             <ul class="services-slides">
-              <li>
+              <li class="services-slide-delivery">
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно!<br>
                     Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!</p>
               </li>
-              <li>
+              <li class="services-slide-guarantee">
                   <h3>Гарантия</h3>
                   <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
               </li>
-              <li>
+              <li class="services-slide-credit">
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                   <a class="button button-red" href="#">отправить заявку</a>
