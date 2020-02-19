@@ -167,7 +167,9 @@ input[type=radio].visually-hidden {
 
 .search-form svg {
 	position: absolute;
-  transform: translate(17px, 12px);
+	-webkit-transform: translate(17px, 12px);
+			-ms-transform: translate(17px, 12px);
+  				transform: translate(17px, 12px);
 }
 
 .search-form path {
@@ -452,7 +454,9 @@ input[type=radio].visually-hidden {
 }
 
 .login-link svg {
-	transform: translate(-7px, 2px);
+	-webkit-transform: translate(-7px, 2px);
+			-ms-transform: translate(-7px, 2px);
+					transform: translate(-7px, 2px);
 }
 
 .login-link:hover path {
@@ -507,12 +511,16 @@ input[type=radio].visually-hidden {
 
 .account-link svg {
 	position: absolute;
-	transform: translate(-32px, 0px);
+	-webkit-transform: translate(-32px, 0px);
+			-ms-transform: translate(-32px, 0px);
+					transform: translate(-32px, 0px);
 }
 
 .logout-link svg {
 	position: absolute;
-	transform: translate(17px, 2px);
+	-webkit-transform: translate(17px, 2px);
+			-ms-transform: translate(17px, 2px);
+					transform: translate(17px, 2px);
 }
 
 .user-navigation .logout-link::after {
@@ -996,8 +1004,6 @@ input[type=radio].visually-hidden {
 }
 
 .services {
-	padding-bottom: 84px;
-
 	background-color: #f4f8fa;
 }
 
@@ -1060,17 +1066,32 @@ input[type=radio].visually-hidden {
 }
 
 .services-slides li {
-	display: none;
+	width: 700px;
+	height: 284px;
 }
 
 .services-slides .services-slide-delivery {
 	display: block;
-	width: 700px;
-	height: 200px;
 
 	background-image: url(../img/delivery.png);
 	background-repeat: no-repeat;
 	background-position: 151px 23px;
+}
+
+.services-slides .services-slide-guarantee {
+	display: none;
+
+	background-image: url(../img/guarantee.png);
+	background-repeat: no-repeat;
+	background-position: 239px 0px;
+}
+
+.services-slides .services-slide-credit {
+	display: none;
+
+	background-image: url(../img/credit.png);
+	background-repeat: no-repeat;
+	background-position: 165px 0px;
 }
 
 .services-control-toggle {
@@ -1152,7 +1173,9 @@ input[type=radio].visually-hidden {
 
 	background-color: #ee3643;
 
-	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+			-ms-transform: translateY(10px);
+					transform: translateY(10px);
 }
 
 /* end section popular-products about-company */
@@ -1244,7 +1267,9 @@ input[type=radio].visually-hidden {
 
 	background: url("../img/icon-home.svg") no-repeat;
 
-	transform: translate(-2px, 4px);
+	-webkit-transform: translate(-2px, 4px);
+			-ms-transform: translate(-2px, 4px);
+					transform: translate(-2px, 4px);
 }
 
 .breadcrumbs:first-child a:focus::before {
@@ -1452,7 +1477,10 @@ input[type=radio].visually-hidden {
 	background-size: contain;
 
 	opacity: 0.8;
-	transform: translate(-35px, -2px);
+
+	-webkit-transform: translate(-35px, -2px);
+			-ms-transform: translate(-35px, -2px);
+					transform: translate(-35px, -2px);
 }
 
 .manufacturer-field-list label:hover::before {
@@ -1493,7 +1521,10 @@ input[type="checkbox"]:checked ~ label::before {
 	background-size: contain;
 
 	opacity: 0.8;
-	transform: translate(-35px, -2px);
+
+	-webkit-transform: translate(-35px, -2px);
+			-ms-transform: translate(-35px, -2px);
+					transform: translate(-35px, -2px);
 }
 
 .rechargeable-field-list label:hover::before {
@@ -1582,11 +1613,15 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .up-dir svg {
-	transform: translate(1px, 1px);
+	-webkit-transform: translate(1px, 1px);
+			-ms-transform: translate(1px, 1px);
+					transform: translate(1px, 1px);
 }
 
 .dawn-dir svg {
-	transform: translate(-15px, 1px);
+	-webkit-transform: translate(-15px, 1px);
+			-ms-transform: translate(-15px, 1px);
+					transform: translate(-15px, 1px);
 }
 
 .catalog-list {
@@ -1748,7 +1783,9 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .catalog-item:hover .catalog-item-image {
-	transform: translate(220px);
+	-webkit-transform: translate(220px);
+			-ms-transform: translate(220px);
+					transform: translate(220px);
 }
 
 .paginaction-list {
@@ -1886,7 +1923,7 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .footer-navigation-item:nth-child(5n+5) a,
-.footer-navigation-item:nth-child(4n+4) a {
+.information-menu-item:nth-child(4n+4) a {
 	padding-right: 0px;
 }
 
@@ -1983,7 +2020,10 @@ input[type="radio"]:checked ~ label::before {
 	background-position: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
-	transform: translate(50%, 50%);
+
+	-webkit-transform: translate(50%, 50%);
+			-ms-transform: translate(50%, 50%);
+					transform: translate(50%, 50%);
 
 }
 
@@ -2049,7 +2089,9 @@ input[type="radio"]:checked ~ label::before {
 	font-size: 16px;
 	line-height: 26px;
 
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
 }
 
 .ribbon span {
