@@ -2111,9 +2111,59 @@ input[type="radio"]:checked ~ label::before {
 /* end Лента new */
 /* modal */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
 	position: fixed;
+	display: none;
+}
 
+.modal-show {
+	display: block;
+
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-map {
@@ -2122,12 +2172,26 @@ input[type="radio"]:checked ~ label::before {
 
 	margin-left: -470px;
 
+	height: 446px;
+
 	box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
 }
 
+.modal-map iframe {
+	position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 .modal-map p {
-	height: 446px;
+	position: absolute;
+  top: 0;
+	left: 0;
+	z-index: 1;
 	margin: 0;
+
+	height: 446px;
 }
 
 .modal-map .button-close,
@@ -2137,7 +2201,7 @@ input[type="radio"]:checked ~ label::before {
 	position: absolute;
 	top: 0;
 	right: 0;
-
+	padding: 0;
 	background: none;
 }
 
@@ -2151,6 +2215,7 @@ input[type="radio"]:checked ~ label::before {
 	right: 9px;
 	width: 21px;
 	height: 21px;
+	z-index: 3;
 
 	background: url("../img/icon-close.svg") no-repeat;
 	background-size: contain;
@@ -2302,11 +2367,5 @@ input[type="radio"]:checked ~ label::before {
 
 .add-cart-bottom .button {
 	width: 140px;
-}
-
-.modal.modal-authorization,
-.modal.modal-map,
-.modal.modal-feedback {
-	display: none;
 }
 /* end modal */
