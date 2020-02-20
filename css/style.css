@@ -376,7 +376,9 @@ input[type=radio].visually-hidden {
 }
 
 .main-header-phone {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			    box-sizing: border-box;
 
 	position: relative;
 
@@ -1366,6 +1368,8 @@ input[type=radio].visually-hidden {
 .parameter-filter .price-range {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10px;
 
 	width: 220px;
 	height: 80px;
@@ -1654,7 +1658,9 @@ input[type="radio"]:checked ~ label::before {
 
 .catalog-item {
 	position: relative;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+					box-sizing: border-box;
 	margin-bottom: 20px;
 	margin-right: 20px;
 
@@ -1698,6 +1704,7 @@ input[type="radio"]:checked ~ label::before {
 .price {
 	margin: 0 0 18px 0;
 	padding: 12px 0;
+	background-color: red;
 	background-image: url(../img/red-button.svg);
 	background-position: 42px 1px;
 	background-repeat: no-repeat;
@@ -2280,7 +2287,9 @@ input[type="radio"]:checked ~ label::before {
 
 .form-field input,
 .form-field textarea {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			    box-sizing: border-box;
 	padding-left: 16px;
 
 	width: 100%;
