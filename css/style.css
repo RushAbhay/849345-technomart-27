@@ -2336,6 +2336,10 @@ input[type="radio"]:checked ~ label::before {
 	line-height: 18px;
 }
 
+.form-field textarea {
+	padding-top: 15px;
+}
+
 .form-field input,
 .form-field textarea {
 	-webkit-box-sizing: border-box;

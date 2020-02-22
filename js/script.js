@@ -21,7 +21,7 @@ if (!document.querySelector(".inner-page")) {
     evt.preventDefault();
     authPopup.classList.add("modal-show");
 
-    if (storage) {
+    if (storage && storage instanceof String) {
       authLogin.value = storage;
     } else {
       authLogin.focus();
