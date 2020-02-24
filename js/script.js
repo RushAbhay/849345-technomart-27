@@ -274,8 +274,12 @@ var cartCount = document.querySelector(".link-cart span");
 
 var defaultCount = 0;
 
-//Обнуляем локальное хранилище чтобы проверить что все работает корректно
-//localStorage.clear();
+// Для соответствия макету. Для правильно работы закоментить
+if (!document.querySelector(".inner-page")) {
+  localStorage.setItem("cartCount", 0);
+} else {
+  localStorage.setItem("cartCount", 10);
+}
 
 try {
   storage = Number(localStorage.getItem("cartCount"));
