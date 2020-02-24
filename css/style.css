@@ -1340,7 +1340,7 @@ input[type=radio].visually-hidden {
 	margin: 0;
 	padding: 10px 20px;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	color: inherit;
 	text-transform: uppercase;
@@ -1359,7 +1359,7 @@ input[type=radio].visually-hidden {
 }
 
 .parameter-filter legend {
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1373,7 +1373,7 @@ input[type=radio].visually-hidden {
 	margin-top: 14px;
 
 	list-style: none;
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -1387,7 +1387,7 @@ input[type=radio].visually-hidden {
 	margin-top: 57px;
 	padding: 10px 35px;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: inherit;
@@ -1606,7 +1606,7 @@ input[type="radio"]:checked ~ label::before {
 	margin: 0;
 	padding: 10px 20px;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: inherit;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -1634,7 +1634,7 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .sorting-filter-list a {
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: rgba(0, 0, 0, 0.3);
 	line-height: 18px;
 	text-transform: uppercase;
@@ -1713,7 +1713,7 @@ input[type="radio"]:checked ~ label::before {
 	width: 220px;
 	height: 318px;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
 	text-align: center;
 
@@ -1730,7 +1730,7 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .catalog-item h3 {
-	margin: 0px 0 12px 0;
+	margin: 0px 15px 12px 15px;
 	font-size: 18px;
 	line-height: 20px;
 }
@@ -1854,7 +1854,7 @@ input[type="radio"]:checked ~ label::before {
 .paginaction-list a {
 	padding: 11px 15px;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	color: inherit;
 	line-height: 18px;
@@ -1884,7 +1884,7 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .paginaction-item:last-child a {
-	padding: 10px 25px;
+	padding: 10px 30px;
 }
 
 .about-rotaryhammers {
@@ -1908,7 +1908,7 @@ input[type="radio"]:checked ~ label::before {
 .about-rotaryhammers p {
 	margin: 0;
 
-	font-family: "PTSans", Arial, sans-serif;    letter-spacing: -0.3px;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 /* end catalog */
 /* footer */
@@ -2349,7 +2349,7 @@ input[type="radio"]:checked ~ label::before {
 
 	width: 100%;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #a9a9a9;
 
 	border: solid 2px #dee3e4;
