@@ -89,6 +89,8 @@ if (!document.querySelector(".inner-page")) {
   var fbName = fbForm.querySelector("[name=your_name]");
   var fbEmail = fbForm.querySelector("[name=your_email]");
   var fbTextarea = fbForm.querySelector("[name=comment-field]");
+  var storageName = "";
+  var storageEmail = "";
 
   try {
     storageName = localStorage.getItem("Name");
@@ -273,8 +275,11 @@ var linkCart = document.querySelector(".link-cart");
 var cartCount = document.querySelector(".link-cart span");
 
 var defaultCount = 0;
+console.log(cartCount);
 
-// Для соответствия макету. Для правильно работы закоментить
+// Для соответствия макету.
+// Для правильной работы закоментить
+// Для работы в IE закоментить
 if (!document.querySelector(".inner-page")) {
   localStorage.setItem("cartCount", 0);
 } else {

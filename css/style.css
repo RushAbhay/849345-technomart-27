@@ -228,7 +228,7 @@ input[type=radio].visually-hidden {
 }
 
 .search-form .site-search:-ms-input-placeholder {
-  color: inherit;
+  color: #ffffff;
 }
 
 .search-form .site-search::-ms-input-placeholder {
@@ -254,7 +254,7 @@ input[type=radio].visually-hidden {
 .site-search:active,
 .site-search:focus + button,
 .site-search:active + button {
-	color: inherit;
+	color: #000000;
 
 	background-color: #ffffff;
 }
@@ -699,7 +699,7 @@ input[type=radio].visually-hidden {
 
 	color: #f0f8ff;
 
-	background-color: #0000001a;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .banners a:hover {
@@ -802,6 +802,7 @@ input[type=radio].visually-hidden {
 
 .main-slider {
 	width: 620px;
+	margin-right: 20px;
 }
 
 .main-slider-controls button,
@@ -1011,6 +1012,7 @@ input[type=radio].visually-hidden {
 
 .about-company-description {
 	width: 520px;
+	margin-right: 120px;
 }
 
 .about-company-description p {
