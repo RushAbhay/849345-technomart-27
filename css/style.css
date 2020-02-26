@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*! style.css | for the project Technomart | HTML Academy */
 
 body {
@@ -85,9 +87,16 @@ input[type=radio].visually-hidden {
 /* header */
 
 .main-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	margin-bottom: 59px;
 
@@ -106,8 +115,12 @@ input[type=radio].visually-hidden {
 }
 
 .main-header-top .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	min-height: 42px;
 }
@@ -155,11 +168,15 @@ input[type=radio].visually-hidden {
 	width: 220px;
 	height: 5px;
 
-	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+	-webkit-box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+	        box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 	background-color: #ee3643;
 }
 
 .search-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	width: 270px;
@@ -186,7 +203,9 @@ input[type=radio].visually-hidden {
 }
 
 .site-search {
-	order: 2;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
 	padding-left: 49px;
 
 	width: 100%;
@@ -198,6 +217,22 @@ input[type=radio].visually-hidden {
 	border: none;
 
 	outline: none;
+}
+
+.search-form .site-search::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.search-form .site-search::-moz-placeholder {
+  color: inherit;
+}
+
+.search-form .site-search:-ms-input-placeholder {
+  color: inherit;
+}
+
+.search-form .site-search::-ms-input-placeholder {
+  color: inherit;
 }
 
 .search-form .site-search::placeholder {
@@ -333,8 +368,13 @@ input[type=radio].visually-hidden {
 }
 
 .main-header-bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .main-header-bottom nav {
@@ -342,17 +382,26 @@ input[type=radio].visually-hidden {
 }
 
 .main-header-bottom .site-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	padding: 0 10px;
   margin: 0;
 }
 
 .information-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	margin-bottom: 39px;
 }
@@ -380,7 +429,6 @@ input[type=radio].visually-hidden {
 
 .main-header-phone {
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
 			    box-sizing: border-box;
 
 	position: relative;
@@ -420,14 +468,23 @@ input[type=radio].visually-hidden {
 }
 
 .user-navigation-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 310px;
 }
 
 .user-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	padding: 0;
 	margin: 0;
@@ -535,6 +592,8 @@ input[type=radio].visually-hidden {
 }
 
 .user-subnavigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	padding-top: 4px;
@@ -559,7 +618,8 @@ input[type=radio].visually-hidden {
 }
 
 .site-navigation {
-	box-shadow: inset 0px -5px 0 0 rgb(41, 52, 73);
+	-webkit-box-shadow: inset 0px -5px 0 0 rgb(41, 52, 73);
+	        box-shadow: inset 0px -5px 0 0 rgb(41, 52, 73);
   background-color: #32425c;
 }
 
@@ -592,8 +652,12 @@ input[type=radio].visually-hidden {
 /* section popular*/
 
 .banners {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	padding: 0;
 	margin-bottom: 20px;
@@ -604,8 +668,13 @@ input[type=radio].visually-hidden {
 .banners li {
 	/* Позиционирование */
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 	/* Блочная модель */
 	width: 300px;
 	height: 123px;
@@ -707,15 +776,24 @@ input[type=radio].visually-hidden {
 }
 
 .profitable-offer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	margin-bottom: 53px;
 }
 
 .profitable-offer .banners {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 
 	margin: 0;
 }
@@ -815,6 +893,10 @@ input[type=radio].visually-hidden {
 .main-slider-list {
 	position: relative;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -827,9 +909,18 @@ input[type=radio].visually-hidden {
 	width: 620px;
 	height: 266px;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	opacity: 0;
 }
@@ -840,7 +931,8 @@ input[type=radio].visually-hidden {
 }
 
 .slide-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .main-slider-item h2 {
@@ -903,8 +995,12 @@ input[type=radio].visually-hidden {
 }
 
 .about-company .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .about-company h2 {
@@ -922,9 +1018,16 @@ input[type=radio].visually-hidden {
 }
 
 .about-company-contacts {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	width: 300px;
 }
@@ -948,8 +1051,12 @@ input[type=radio].visually-hidden {
 
 .popular-products-header,
 .popular-manufacturers-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	margin-bottom: 21px;
 
@@ -964,7 +1071,9 @@ input[type=radio].visually-hidden {
 
 .popular-products-header .button-red,
 .popular-manufacturers-header .button-red {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 
 	margin: 0 24px 0 0;
 }
@@ -980,8 +1089,13 @@ input[type=radio].visually-hidden {
 }
 
 .popular-products {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .popular-products h2,
@@ -996,9 +1110,14 @@ input[type=radio].visually-hidden {
 }
 
 .manufacturer-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	padding-left: 0;
 
@@ -1006,9 +1125,15 @@ input[type=radio].visually-hidden {
 }
 
 .manufacturer-list li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	width: 220px;
 	height: 145px;
@@ -1020,12 +1145,14 @@ input[type=radio].visually-hidden {
 }
 
 .manufacturer-list .manufacturer-list-item:hover {
-	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 .manufacturer-list .manufacturer-list-item:focus,
 .manufacturer-list .manufacturer-list-item:active {
 	opacity: 0.5;
-	box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .logo-bosch img {
@@ -1066,8 +1193,13 @@ input[type=radio].visually-hidden {
 }
 
 .services .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .services h2 {
@@ -1095,6 +1227,8 @@ input[type=radio].visually-hidden {
 }
 
 .services-slider {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -1168,7 +1302,9 @@ input[type=radio].visually-hidden {
 	text-align: left;
 	text-transform: none;
 
-	box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+	-webkit-box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+
+	        box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   background-color: #32425c;
 }
 
@@ -1178,7 +1314,8 @@ input[type=radio].visually-hidden {
 
 .services-control-toggle:focus {
 	color: #32425c;
-	box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+	-webkit-box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+	        box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
 	background-color: #fff;
 }
 
@@ -1200,7 +1337,8 @@ input[type=radio].visually-hidden {
 
 .services-control-item-active .services-control-toggle {
 	color: #32425c;
-	box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+	-webkit-box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+	        box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   background-color: #ffffff;
 }
 
@@ -1223,8 +1361,13 @@ input[type=radio].visually-hidden {
 }
 
 .transport-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	position: relative;
 
 	padding-left: 36px;
@@ -1264,8 +1407,12 @@ input[type=radio].visually-hidden {
 }
 
 .filters-and-catalog .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .filters-and-catalog .filters {
@@ -1282,9 +1429,14 @@ input[type=radio].visually-hidden {
 }
 
 .breadcrumbs {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   margin: 0;
 
@@ -1493,14 +1645,20 @@ input[type=radio].visually-hidden {
 }
 
 .price-input {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	margin-bottom: 25px;
 }
 
 .price-input span {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 
 	font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
@@ -1624,8 +1782,12 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .sorting-filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-bottom: 20px;
 
 	border-radius: 4px;
@@ -1645,9 +1807,15 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .sorting-filter-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0;
 	margin: 0;
 	margin-left: 74px;
@@ -1706,9 +1874,14 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .catalog-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 
 	margin: 0;
 	padding: 0;
@@ -1721,22 +1894,29 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .catalog-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	border: solid 1px #e5e5e5;
 	background-color: #ffffff;
 }
 
 .catalog-item:hover {
-	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item {
 	position: relative;
 	-webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
 					box-sizing: border-box;
 	margin-bottom: 20px;
 	margin-right: 20px;
@@ -1825,7 +2005,9 @@ input[type="radio"]:checked ~ label::before {
 
 	color: #ffffff;
 
-	box-shadow: inset 0px -3px 0 0 #367315;
+	-webkit-box-shadow: inset 0px -3px 0 0 #367315;
+
+	        box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #63a63e;
 }
 
@@ -1872,8 +2054,12 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .paginaction-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 285px;
 
 	padding: 7px 0px;
@@ -1945,8 +2131,12 @@ input[type="radio"]:checked ~ label::before {
 /* footer */
 
 .footer-top .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	height: 95px;
 }
@@ -1960,14 +2150,24 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .footer-middle .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .footer-bottom .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .main-footer {
@@ -1976,9 +2176,14 @@ input[type="radio"]:checked ~ label::before {
 
 .footer-navigation,
 .information-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 0;
 	margin: 0;
 
@@ -2064,9 +2269,14 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .social-links {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 132px;
 	margin-top: 15px;
 	margin-left: 110px;
@@ -2199,28 +2409,55 @@ input[type="radio"]:checked ~ label::before {
 /* end Лента new */
 /* modal */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -2228,14 +2465,41 @@ input[type="radio"]:checked ~ label::before {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -2247,11 +2511,14 @@ input[type="radio"]:checked ~ label::before {
 .modal-show {
 	display: block;
 
-	animation: bounce 0.6s;
+	-webkit-animation: bounce 0.6s;
+
+	        animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-map {
@@ -2262,7 +2529,9 @@ input[type="radio"]:checked ~ label::before {
 
 	height: 446px;
 
-	box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
+	-webkit-box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
+
+	        box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
 }
 
 .modal-map iframe {
@@ -2325,29 +2594,49 @@ input[type="radio"]:checked ~ label::before {
 	border-top: 7px solid #ff5256;
 
 	background-color: #fff;
-	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+	        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal-feedback form,
 .modal-authorization form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .modal-feedback .form-top,
 .modal-authorization .form-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding: 55px 80px 23px 80px;
 }
 
 .modal-feedback .form-field,
 .modal-authorization .form-field {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	margin-bottom: 20px;
 
@@ -2374,7 +2663,6 @@ input[type="radio"]:checked ~ label::before {
 .form-field input,
 .form-field textarea {
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
 			    box-sizing: border-box;
 	padding-left: 16px;
 
@@ -2404,6 +2692,26 @@ input[type="radio"]:checked ~ label::before {
 	outline: none;
 }
 
+.form-field input::-webkit-input-placeholder, .form-field textarea::-webkit-input-placeholder {
+	padding-top: 10px;
+	color: #a9a9a9;
+}
+
+.form-field input::-moz-placeholder, .form-field textarea::-moz-placeholder {
+	padding-top: 10px;
+	color: #a9a9a9;
+}
+
+.form-field input:-ms-input-placeholder, .form-field textarea:-ms-input-placeholder {
+	padding-top: 10px;
+	color: #a9a9a9;
+}
+
+.form-field input::-ms-input-placeholder, .form-field textarea::-ms-input-placeholder {
+	padding-top: 10px;
+	color: #a9a9a9;
+}
+
 .form-field input::placeholder,
 .form-field textarea::placeholder {
 	padding-top: 10px;
@@ -2426,7 +2734,8 @@ input[type="radio"]:checked ~ label::before {
 
 	border-top: 7px solid #ff5256;
 	background-color: #fff;
-	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+	        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal-add-cart h2 {
@@ -2451,9 +2760,15 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .add-cart-bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	padding: 44px 80px;
 
