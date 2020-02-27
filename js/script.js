@@ -275,7 +275,6 @@ var linkCart = document.querySelector(".link-cart");
 var cartCount = document.querySelector(".link-cart span");
 
 var defaultCount = 0;
-console.log(cartCount);
 
 // Для соответствия макету.
 // Для правильной работы закоментить
