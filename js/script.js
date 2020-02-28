@@ -17,7 +17,7 @@ if (!document.querySelector(".inner-page")) {
     isStorageSupport = false;
   }
 
-  authLink.addEventListener("click", function(evt) {
+  authLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     authPopup.classList.add("modal-show");
 
@@ -28,13 +28,13 @@ if (!document.querySelector(".inner-page")) {
     }
   });
 
-  authClose.addEventListener("click", function(evt){
+  authClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     authPopup.classList.remove("modal-show");
     authPopup.classList.remove("modal-error");
   });
 
-  authForm.addEventListener("submit", function(evt){
+  authForm.addEventListener("submit", function (evt) {
     if (!authLogin.value) {
       evt.preventDefault();
       authPopup.classList.remove("modal-error");
@@ -45,7 +45,7 @@ if (!document.querySelector(".inner-page")) {
     }
   });
 
-  window.addEventListener("keydown", function(evt) {
+  window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (authPopup.classList.contains("modal-show")) {
         evt.preventDefault();
@@ -103,14 +103,14 @@ if (!document.querySelector(".inner-page")) {
     isStorageSupport = false;
   }
 
-  fbLink.addEventListener("click", function(evt) {
+  fbLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     fbPopup.classList.add("modal-show");
 
     if (storageName) {
       fbName.value = storageName;
       if (storageEmail) {
-        fbEmail.value =storageEmail;
+        fbEmail.value = storageEmail;
         fbTextarea.focus();
       } else {
         fbEmail.focus();
@@ -121,13 +121,13 @@ if (!document.querySelector(".inner-page")) {
 
   });
 
-  fbClose.addEventListener("click", function(evt){
+  fbClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     fbPopup.classList.remove("modal-show");
     fbPopup.classList.remove("modal-error");
   });
 
-  fbForm.addEventListener("submit", function(evt){
+  fbForm.addEventListener("submit", function (evt) {
     if (!fbName.value || !fbEmail.value) {
       evt.preventDefault();
       fbPopup.classList.remove("modal-error");
@@ -141,7 +141,7 @@ if (!document.querySelector(".inner-page")) {
     }
   });
 
-  window.addEventListener("keydown", function(evt) {
+  window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (fbPopup.classList.contains("modal-show")) {
         evt.preventDefault();
@@ -160,15 +160,15 @@ if (!document.querySelector(".inner-page")) {
   var radio1 = slider.querySelector(".slider-radio-1");
   var radio2 = slider.querySelector(".slider-radio-2");
 
-  var cnt = slideItem.length-1;
+  var cnt = slideItem.length - 1;
 
-  controlLeft.addEventListener("click", function(evt){
+  controlLeft.addEventListener("click", function (evt) {
     evt.preventDefault();
 
 
     if (cnt > 0) {
       cnt = cnt - 1;
-      for (var i = 0; i < slideItem.length; i++){
+      for (var i = 0; i < slideItem.length; i++) {
         slideItem[i].classList.remove("slide-show");
       }
       slideItem[cnt].classList.add("slide-show");
@@ -182,12 +182,12 @@ if (!document.querySelector(".inner-page")) {
     radio1.classList.add("active");
   });
 
-  controlRight.addEventListener("click", function(evt){
+  controlRight.addEventListener("click", function (evt) {
     evt.preventDefault();
 
-    if (cnt < slideItem.length-1) {
+    if (cnt < slideItem.length - 1) {
       cnt = cnt + 1;
-      for (var i = 0; i < slideItem.length; i++){
+      for (var i = 0; i < slideItem.length; i++) {
         slideItem[i].classList.remove("slide-show");
       }
       slideItem[cnt].classList.add("slide-show");
@@ -201,7 +201,7 @@ if (!document.querySelector(".inner-page")) {
     radio2.classList.add("active");
   });
 
-  radio1.addEventListener("click", function(evt){
+  radio1.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideItem[1].classList.remove("slide-show");
     slideItem[0].classList.add("slide-show");
@@ -209,7 +209,7 @@ if (!document.querySelector(".inner-page")) {
     radio1.classList.add("active");
   });
 
-  radio2.addEventListener("click", function(evt){
+  radio2.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideItem[0].classList.remove("slide-show");
     slideItem[1].classList.add("slide-show");
@@ -218,7 +218,6 @@ if (!document.querySelector(".inner-page")) {
   });
 
   // Скрипт листания слайдов влево и вправо учитывает любое количество слайдов.
-  // ПО хорошему, насколько я понял, radio надо рисовать столько, сколько у нас слайдов с помощью js, но согласно ТЗ, в верстке должны быть отрисованы кнопки до написания скриптов.
 
   /* services-slider */
 
@@ -229,36 +228,36 @@ if (!document.querySelector(".inner-page")) {
   var buttonCredit = servicesSlider.querySelector(".button-credit");
   var servicesSlides = servicesSlider.querySelectorAll(".services-slides li");
 
-  buttonDelivery.addEventListener("click", function(evt){
+  buttonDelivery.addEventListener("click", function (evt) {
     evt.preventDefault();
-    for (var i = 0; i < servicesControl.length; i++){
+    for (var i = 0; i < servicesControl.length; i++) {
       servicesControl[i].classList.remove("services-control-item-active");
     }
-    for (var i = 0; i < servicesSlides.length; i++){
+    for (var i = 0; i < servicesSlides.length; i++) {
       servicesSlides[i].classList.remove("services-slide-show");
     }
     servicesControl[0].classList.add("services-control-item-active");
     servicesSlides[0].classList.add("services-slide-show");
   });
 
-  buttonGuarantee.addEventListener("click", function(evt){
+  buttonGuarantee.addEventListener("click", function (evt) {
     evt.preventDefault();
-    for (var i = 0; i < servicesControl.length; i++){
+    for (var i = 0; i < servicesControl.length; i++) {
       servicesControl[i].classList.remove("services-control-item-active");
     }
-    for (var i = 0; i < servicesSlides.length; i++){
+    for (var i = 0; i < servicesSlides.length; i++) {
       servicesSlides[i].classList.remove("services-slide-show");
     }
     servicesControl[1].classList.add("services-control-item-active");
     servicesSlides[1].classList.add("services-slide-show");
   });
 
-  buttonCredit.addEventListener("click", function(evt){
+  buttonCredit.addEventListener("click", function (evt) {
     evt.preventDefault();
-    for (var i = 0; i < servicesControl.length; i++){
+    for (var i = 0; i < servicesControl.length; i++) {
       servicesControl[i].classList.remove("services-control-item-active");
     }
-    for (var i = 0; i < servicesSlides.length; i++){
+    for (var i = 0; i < servicesSlides.length; i++) {
       servicesSlides[i].classList.remove("services-slide-show");
     }
     servicesControl[2].classList.add("services-control-item-active");
@@ -276,9 +275,8 @@ var cartCount = document.querySelector(".link-cart span");
 
 var defaultCount = 0;
 
-// Для соответствия макету.
-// Для правильной работы закоментить
-// Для работы в IE закоментить
+// Для соответствия макету. Для правильной работы закоментить. Для работы в IE закоментить
+
 if (!document.querySelector(".inner-page")) {
   localStorage.setItem("cartCount", 0);
 } else {
@@ -292,18 +290,18 @@ try {
 }
 
 
-if (storage){
+if (storage) {
   linkCart.classList.add("full");
   cartCount.innerHTML = storage;
   cartCount.dataset.count = storage;
 }
 
-for (var i = 0; i < buttonBuy.length; i++){
-  buttonBuy[i].addEventListener("click", function(evt){
+for (var i = 0; i < buttonBuy.length; i++) {
+  buttonBuy[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     addCartPopup.classList.add("modal-show");
 
-    defaultCount +=1;
+    defaultCount += 1;
 
     if (isStorageSupport) {
       localStorage.setItem("cartCount", storage + defaultCount);
@@ -316,12 +314,12 @@ for (var i = 0; i < buttonBuy.length; i++){
   });
 }
 
-addCartClose.addEventListener("click", function(evt){
+addCartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   addCartPopup.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (addCartPopup.classList.contains("modal-show")) {
       evt.preventDefault();
