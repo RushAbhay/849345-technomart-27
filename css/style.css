@@ -1226,7 +1226,7 @@ input[type=radio].visually-hidden {
 
 .services-slides li {
   display: none;
-  width: 700px;
+  min-width: 630px;
   min-height: 284px;
 }
 
